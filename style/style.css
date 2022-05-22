@@ -1,0 +1,388 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: PingFangTC-Regular, sans-serif;
+}
+
+.wrap {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.wrap header {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap header .logo {
+  width: 220px;
+}
+
+.wrap header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 210px;
+  margin-right: 79px;
+}
+
+.wrap header div ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #3f5d45;
+  font-weight: 600;
+}
+
+.wrap .main {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .main .menu {
+  width: 300px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.wrap .main .menu h1 {
+  height: 65px;
+  background: #3f5d45;
+  color: #eaf0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap .main .menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 65px;
+  color: #3f5d45;
+  cursor: pointer;
+}
+
+.wrap .main .menu ul li:hover {
+  background: #eaf0ed;
+}
+
+.wrap .main .menu ul .active {
+  background: #eaf0ed;
+}
+
+.wrap .main .products .items {
+  width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .main .products .items .item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.wrap .main .products .items .item .select {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 36px;
+  height: 106px;
+  background: #3f5d45;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.wrap .main .products .items .item .favorite {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.wrap .main .products .items .item .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+}
+
+.wrap .main .products .items .item .description p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3f5d45;
+  font-size: 20px;
+  border: 1px solid #eaf0ed;
+  border-top: none;
+  border-bottom: none;
+}
+
+.wrap .main .products .items .item .description .name {
+  width: 172px;
+  font-weight: 300;
+}
+
+.wrap .main .products .items .item .description .price {
+  width: 127px;
+  font-weight: 600;
+}
+
+.wrap .main .products .items .item button {
+  height: 65px;
+  width: 100%;
+  background: #eaf0ed;
+  color: #3f5d45;
+  font-size: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wrap .main .products .pagination {
+  margin: 10px 0 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrap .main .products .pagination li {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #eaf0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3f5d45;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.wrap .main .products .pagination .active {
+  background: #3f5d45;
+  color: #fff;
+}
+
+footer .subscribe {
+  background: #3f5d45;
+}
+
+footer .subscribe img {
+  width: 40px;
+}
+/*# sourceMappingURL=style.css.map */

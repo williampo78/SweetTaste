@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+$primary: #3f5d45;
+body {
+  font-family: PingFangTC-Regular, sans-serif;
+}
+.wrap {
+  max-width: 940px;
+  margin: 0 auto;
+  header {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 220px;
+    }
+    div {
+      display: flex;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+        margin-right: 79px;
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            color: $primary;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .main {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    .menu {
+      width: 300px;
+      font-size: 24px;
+      font-weight: 600;
+      h1 {
+        height: 65px;
+        background: $primary;
+        color: #eaf0ed;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 65px;
+          color: $primary;
+          cursor: pointer;
+          &:hover {
+            background: #eaf0ed;
+          }
+        }
+        .active {
+          background: #eaf0ed;
+        }
+      }
+    }
+    .products {
+      .items {
+        width: 620px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item {
+          position: relative;
+          margin-bottom: 20px;
+          .select {
+            writing-mode: vertical-rl;
+            display: flex;
+            width: 36px;
+            height: 106px;
+            background: #3f5d45;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 20px;
+          }
+          .favorite {
+            position: absolute;
+            top: 19px;
+            right: 22px;
+            width: 25px;
+            cursor: pointer;
+          }
+          .description {
+            display: flex;
+            height: 56px;
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: $primary;
+              font-size: 20px;
+              border: 1px solid #eaf0ed;
+              border-top: none;
+              border-bottom: none;
+            }
+
+            .name {
+              width: 172px;
+              font-weight: 300;
+            }
+            .price {
+              width: 127px;
+              font-weight: 600;
+            }
+          }
+          button {
+            height: 65px;
+            width: 100%;
+            background: #eaf0ed;
+            color: $primary;
+            font-size: 24px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+      .pagination {
+        margin: 10px 0 60px 0;
+        display: flex;
+        justify-content: flex-end;
+        li {
+          width: 60px;
+          height: 60px;
+          border: 1px solid #eaf0ed;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $primary;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .active {
+          background: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+footer {
+  .subscribe {
+    background: $primary;
+    img {
+      width: 40px;
+    }
+  }
+}
