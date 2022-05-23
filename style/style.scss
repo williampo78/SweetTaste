@@ -196,6 +196,7 @@ body {
           height: 65px;
           color: $primary;
           cursor: pointer;
+          border: #eaf0ed 1px solid;
           &:hover {
             background: #eaf0ed;
           }
@@ -222,10 +223,12 @@ body {
             background: #3f5d45;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: #eaf0ed;
             position: absolute;
             top: 0;
             left: 20px;
+            font-weight: 600;
+            letter-spacing: 5px;
           }
           .favorite {
             position: absolute;
@@ -266,6 +269,10 @@ body {
             border: none;
             font-weight: 600;
             cursor: pointer;
+            &:hover {
+              color: #eaf0ed;
+              background: $primary;
+            }
           }
         }
       }
@@ -286,17 +293,9 @@ body {
         }
         .active {
           background: $primary;
-          color: #fff;
+          color: #eaf0ed;
         }
       }
-    }
-  }
-}
-footer {
-  .subscribe {
-    background: $primary;
-    img {
-      width: 40px;
     }
   }
 }
