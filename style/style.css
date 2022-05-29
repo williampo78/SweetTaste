@@ -183,8 +183,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 210px;
   margin-right: 79px;
+}
+
+.wrap header div ul li {
+  margin: 0 30px;
 }
 
 .wrap header div ul li a {
@@ -197,6 +200,10 @@ body {
   height: 100%;
   color: #3f5d45;
   font-weight: 600;
+}
+
+.wrap header div ul li a:hover {
+  text-decoration: underline;
 }
 
 .wrap .main {
@@ -216,7 +223,7 @@ body {
 }
 
 .wrap .main .menu h1 {
-  height: 65px;
+  padding: 20px 0;
   background: #3f5d45;
   color: #eaf0ed;
   display: -webkit-box;
@@ -240,7 +247,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 65px;
+  padding: 20px 0;
   color: #3f5d45;
   cursor: pointer;
   border: #eaf0ed 1px solid;
@@ -278,8 +285,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 36px;
-  height: 106px;
+  padding: 10px;
   background: #3f5d45;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -299,8 +305,15 @@ body {
   position: absolute;
   top: 19px;
   right: 22px;
-  width: 25px;
   cursor: pointer;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.wrap .main .products .items .item .favorite img {
+  width: 25px;
 }
 
 .wrap .main .products .items .item .description {
@@ -310,7 +323,8 @@ body {
   height: 56px;
 }
 
-.wrap .main .products .items .item .description p {
+.wrap .main .products .items .item .description p,
+.wrap .main .products .items .item .description h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,7 +351,7 @@ body {
   font-weight: 600;
 }
 
-.wrap .main .products .items .item button {
+.wrap .main .products .items .item .addToCart {
   height: 65px;
   width: 100%;
   background: #eaf0ed;
@@ -348,7 +362,7 @@ body {
   cursor: pointer;
 }
 
-.wrap .main .products .items .item button:hover {
+.wrap .main .products .items .item .addToCart:hover {
   color: #eaf0ed;
   background: #3f5d45;
 }
@@ -376,13 +390,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #3f5d45;
   font-size: 20px;
   cursor: pointer;
 }
 
+.wrap .main .products .pagination li a {
+  color: #3f5d45;
+}
+
+.wrap .main .products .pagination li:hover {
+  background: #eaf0ed;
+}
+
 .wrap .main .products .pagination .active {
   background: #3f5d45;
+}
+
+.wrap .main .products .pagination .active:hover {
+  background: #3f5d45;
+}
+
+.wrap .main .products .pagination .active a {
   color: #eaf0ed;
 }
 /*# sourceMappingURL=style.css.map */

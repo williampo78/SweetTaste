@@ -157,15 +157,18 @@ body {
       ul {
         display: flex;
         justify-content: space-between;
-        width: 210px;
         margin-right: 79px;
         li {
+          margin: 0 30px;
           a {
             display: flex;
             align-items: center;
             height: 100%;
             color: $primary;
             font-weight: 600;
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -180,10 +183,9 @@ body {
       font-size: 24px;
       font-weight: 600;
       h1 {
-        height: 65px;
+        padding: 20px 0;
         background: $primary;
         color: #eaf0ed;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -193,7 +195,7 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 65px;
+          padding: 20px 0;
           color: $primary;
           cursor: pointer;
           border: #eaf0ed 1px solid;
@@ -218,8 +220,7 @@ body {
           .select {
             writing-mode: vertical-rl;
             display: flex;
-            width: 36px;
-            height: 106px;
+            padding: 10px;
             background: #3f5d45;
             align-items: center;
             justify-content: center;
@@ -234,13 +235,20 @@ body {
             position: absolute;
             top: 19px;
             right: 22px;
-            width: 25px;
             cursor: pointer;
+            padding: 0;
+            outline: none;
+            border: none;
+            background: none;
+            img {
+              width: 25px;
+            }
           }
           .description {
             display: flex;
             height: 56px;
-            p {
+            p,
+            h2 {
               display: flex;
               justify-content: center;
               align-items: center;
@@ -250,7 +258,6 @@ body {
               border-top: none;
               border-bottom: none;
             }
-
             .name {
               width: 172px;
               font-weight: 300;
@@ -260,7 +267,7 @@ body {
               font-weight: 600;
             }
           }
-          button {
+          .addToCart {
             height: 65px;
             width: 100%;
             background: #eaf0ed;
@@ -287,13 +294,23 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          color: $primary;
           font-size: 20px;
           cursor: pointer;
+          a {
+            color: $primary;
+          }
+          &:hover {
+            background: #eaf0ed;
+          }
         }
         .active {
           background: $primary;
-          color: #eaf0ed;
+          &:hover {
+            background: $primary;
+          }
+          a {
+            color: #eaf0ed;
+          }
         }
       }
     }
